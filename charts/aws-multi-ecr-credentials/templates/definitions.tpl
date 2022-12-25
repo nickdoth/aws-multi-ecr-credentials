@@ -3,7 +3,7 @@
 Define resource names
 */}}
 {{- define "aws-multi-ecr-credentials.namespace" }}
-{{- default (printf "%s-ns" .Release.Name) -}}
+{{- default (printf "%s-ns" .Values.targetNamespace) -}}
 {{- end }}
 
 {{- define "aws-multi-ecr-credentials.serviceAccount" }}
